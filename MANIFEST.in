@@ -1,0 +1,7 @@
+include README.txt
+
+global-exclude *.pyc
+global-exclude *.pyo
+global-exclude *.orig
+global-exclude *.rej
+
