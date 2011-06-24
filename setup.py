@@ -1,3 +1,12 @@
+# Copyright: 2011 by the XStatic authors, see AUTHORS.txt for details.
+# License: MIT license, see LICENSE.txt for details.
+
+"""
+XStatic - setup.py
+
+Works with: setuptools
+"""
+
 from setuptools import setup, find_packages
 
 # The README.txt file should be written in reST so that PyPI can use
