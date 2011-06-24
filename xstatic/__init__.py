@@ -1,3 +1,10 @@
+# Copyright: 2011 by the XStatic authors, see AUTHORS.txt for details.
+# License: MIT license, see LICENSE.txt for details.
+
+"""
+XStatic - main package with minimal support code to work with static file packages
+"""
+
 # http://remote_base/path
 # http://local_base/path
 
