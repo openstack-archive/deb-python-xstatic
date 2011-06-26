@@ -23,8 +23,10 @@ setup(
     keywords=[],
     author='Thomas Waldmann',
     author_email='tw@waldmann-edv.de',
+    url='http:/bitbucket.org/thomaswaldmann/xstatic',
     license='MIT license',
     packages=find_packages(),
+    namespace_packages=['xstatic', 'xstatic.pkg', ],
     include_package_data=True,
     zip_safe=False,
     install_requires=[],  # there should never be a dependency!
