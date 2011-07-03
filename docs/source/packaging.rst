@@ -28,6 +28,8 @@ steps:
   included in the package created later.
 * Edit README.txt and replace references to jQuery with FooBar.
   This file's content will also be shown as long description on PyPi.
+  Please note that this file is written in reST markup, so that PyPi can
+  generate your project's page from it.
 * If you use Mercurial, update .hgignore so it ignores:
   ^XStatic_FooBar.egg-info/
 * Review all the stuff you did, make sure you did not forget anything, make
@@ -58,6 +60,9 @@ There are 3 names involved and you should follow these rules:
   for your package directory / package name.
 * display_name (metadata): the name as the upstream project itself spells it,
   e.g. jQuery or FooBar. No spaces.
+
+Note: if you are not packaging original files, but modified files, then you
+must use a name that makes this fact obvious.
 
 Version Numbers
 ---------------
@@ -95,5 +100,11 @@ If your files are available via a public CDN (Content Distribution Network),
 you can give the URLs via the locations metadata.
 
 If you do not have a CDN for the files, just use locations = {}.
+
+Licensing
+---------
+You should put your XStatic-FooBar package under same license as the upstream
+FooBar package. This avoids licensing complications and is also appropriate
+because you only added a little metadata anyway.
 
 

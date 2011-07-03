@@ -34,6 +34,8 @@ Pros
   in your main project's setup
 * you do not need to add 3rd party files to your repository or your distribution
   archives
+* supports development / virtualenv / windows installs (where no other package
+  management tools are available)
 * less work for linux distribution package maintainers, you already have split
   your stuff into separate packages, so they don't need to
 * outsource some work to other people. there are lots of people needing these
