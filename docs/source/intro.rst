@@ -25,7 +25,7 @@ they won't be required if you just want the files.
 
 By having static files in packages, it is also easier to build virtual envs,
 support linux/bsd/... distribution package maintainers and even windows installs
-using the same mechanisms.
+using the same mechanism.
 
 Pros
 ====
@@ -38,11 +38,11 @@ Pros
   your stuff into separate packages, so they don't need to
 * outsource some work to other people. there are lots of people needing these
   static packages, so you don't need to maintain them all yourself.
-* additionally to the files, you'll get some more-or-less metadata (like
-  version info, name, CDN URLs (if any).
+* additionally to the files, you'll get some metadata (like version info, name,
+  CDN URLs (if any).
 * we can use version number of the package to reflect the version of the packaged
   static stuff and use the packaging system to require some specific version,
-  or some specific minimum version.
+  or some specific minimum/maximum version.
 * security updates are easier, the static file packages can be updated separately
   from your main package.
 

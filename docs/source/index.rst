@@ -16,6 +16,7 @@ Using XStatic
    :maxdepth: 2
 
    using
+   packaging
 
 
 Indices and tables
