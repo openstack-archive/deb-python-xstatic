@@ -73,7 +73,7 @@ a build number, like:
 
 Some projects do not have such version numbers, make the best of it:
 
-* Upstream version: 2010-12-31, XStatic-FooBar version: 2011.12.31.0
+* Upstream version: 2010-12-31, XStatic-FooBar version: 2010.12.31.0
 
 Which files to put into your package?
 -------------------------------------
