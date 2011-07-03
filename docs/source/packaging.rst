@@ -108,3 +108,46 @@ FooBar package. This avoids licensing complications and is also appropriate
 because you only added a little metadata anyway.
 
 
+Notes for Linux (or other OS) Package Maintainers
+=================================================
+If you are maintaining packages for some other packaging system, like .deb
+or .rpm, this section is for you.
+
+When designing XStatic stuff, we had YOU in mind! :)
+
+But not only you, we also had in mind that there is no packaging system on
+Windows and that developers or virtualenv users rather like setuptools,
+distribute and pip.
+
+Because of this, we did not want to rely on any mechanism that might be not
+available in some scenario - thus, after files are installed, we only use
+Python features (like importing from a installed python package, using
+__file__ to find out the path/filename, etc.).
+
+You, as a package maintainer are interested in avoiding duplication, so that
+if you need to do a security update, you only need to fix in one place.
+
+XStatic-* packages support this. If you do not want to heavily patch some
+Python software that uses XStatic ressource packages, you can alternatively
+just package the XStatic resource packages for your package system.
+
+In case that would add duplication (because you already have a package that
+provides the same static files), you can simply remove the static files below
+data/ from the XStatic ressource package and adjust the path/filename so it
+points to the files provided by that other package.
+
+E.g. for the XStatic-jQuery package, change::
+
+    base_dir = join(dirname(__file__), 'data')
+
+To::
+
+    base_dir = '/usr/share/javascript/jquery'
+
+Of course you need to make sure that the files at the location you point to
+are the same as the ones the XStatic ressource package provides below the
+data/ directory.
+
+In your package dependencies for your repackaged XStatic ressource package
+you would then just require (depend on) the package providing these files.
+
