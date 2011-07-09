@@ -16,11 +16,10 @@ steps:
 * Edit xstatic/pkg/foobar/__init__.py and update all information there
   appropriately (see the comments there and also the hints below).
   Most stuff from there will get reused by setup.py.
-  Do not forget to use some appropriate class name.
 * Edit setup.py:
 
-  - You need to change the "from xstatic.pkg..." appropriately to import your
-    class.
+  - You need to change the "from xstatic.pkg import ... as xs" appropriately
+    to import your package.
   - Review the rest of it, but most stuff should be fine as it just reuses
     stuff from XStatic metadata.
 * Edit MANIFEST.in and change the recursive-include statement there to refer
@@ -49,16 +48,13 @@ Misc. Hints
 
 Names
 -----
-There are 3 names involved and you should follow these rules:
+There are 2 names involved and you should follow these rules:
 
-* XStatic subclass name: choose something starting with a uppercase letter
-  to follow PEP8 naming convention. E.g. FooBar or JQuery, not foobar nor
-  jQuery.
-* name (metadata): simple, all lowercase name. E.g. foobar or jquery.
-  If you would have to use "-": please replace it by "_". Minus is not valid
-  in Python package names, so use underscore so that you can use same name
-  for your package directory / package name.
-* display_name (metadata): the name as the upstream project itself spells it,
+* package name (== metadata NAME): simple, all lowercase name. E.g. foobar or
+  jquery. If you would have to use "-": please replace it by "_". Minus is not
+  valid in Python package names, so use underscore so that you can use same
+  name for your package directory / package name.
+* DISPLAY_NAME (metadata): the name as the upstream project itself spells it,
   e.g. jQuery or FooBar. No spaces.
 
 Note: if you are not packaging original files, but modified files, then you
@@ -66,19 +62,17 @@ must use a name that makes this fact obvious.
 
 Version Numbers
 ---------------
-As you are just repackaging another project, you should use the upstream
-version number (or at least something closely related to it).
+VERSION - as you are just repackaging another project, you should use the
+upstream version number (or at least something closely related to it).
 
-As you maybe do not get packaging right on the first try, we suggest appending
-a build number, like:
+Some projects do not have good version numbers, make the best of it:
 
-* Upstream version: 1.2.3, XStatic-FooBar version: 1.2.3.0 (initial package)
-* Upstream version: 1.2.3, XStatic-FooBar version: 1.2.3.1 (fixed package)
-* Upstream version: 1.2.4, XStatic-FooBar version: 1.2.4.0 (initial package)
+E.g. upstream version: 2010-12-31, XStatic-FooBar version: 2010.12.31
 
-Some projects do not have such version numbers, make the best of it:
+BUILD - as you maybe do not get packaging right on the first try, you'll
+want to enumerate your builds: 0, 1, 2, ...
 
-* Upstream version: 2010-12-31, XStatic-FooBar version: 2010.12.31.0
+PACKAGE_VERSION - is automatically computed from VERSION . BUILD.
 
 Which files to put into your package?
 -------------------------------------
@@ -138,11 +132,11 @@ points to the files provided by that other package.
 
 E.g. for the XStatic-jQuery package, change::
 
-    base_dir = join(dirname(__file__), 'data')
+    BASE_DIR = join(dirname(__file__), 'data')
 
 To::
 
-    base_dir = '/usr/share/javascript/jquery'
+    BASE_DIR = '/usr/share/javascript/jquery'
 
 Of course you need to make sure that the files at the location you point to
 are the same as the ones the XStatic ressource package provides below the
