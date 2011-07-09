@@ -7,16 +7,15 @@ XStatic - setup.py
 Works with: setuptools
 """
 
-from setuptools import setup, find_packages
-
 # The README.txt file should be written in reST so that PyPI can use
 # it to generate your project's PyPI page. 
 long_description = open('README.txt').read()
 
+from setuptools import setup, find_packages
 
 setup(
     name='XStatic',
-    version='0.0.1',
+    version='0.0.2',
     description='XStatic base package with minimal support code',
     long_description=long_description,
     classifiers=[
@@ -30,7 +29,7 @@ setup(
         'Topic :: System :: Installation/Setup',
         'Topic :: System :: Software Distribution',
         ],
-    keywords="static file resource python packages setuptools pypi require",
+    keywords="xstatic static file resource python packages setuptools pypi require",
     author='Thomas Waldmann',
     author_email='tw@waldmann-edv.de',
     url='http:/bitbucket.org/thomaswaldmann/xstatic',

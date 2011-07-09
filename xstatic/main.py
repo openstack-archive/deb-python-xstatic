@@ -10,18 +10,19 @@ class XStatic(object):
     minimal support code to access resources from xstatic.pkg.* files
     or CDN locations.
     """
-    name = None  # lowercase short name
-    base_dir = None  # fs path to the files
-    locations = {}  # CDN/remote locations
-
-    def __init__(self, root_url='/xstatic', provider='local', protocol='http'):
+    def __init__(self, module, root_url='/xstatic', provider='local', protocol='http'):
         """
+        :arg module: xstatic resource package/module, has metadata as attributes
         :arg root_url: the common root url path for all local xstatic
                        resources
         :arg provider: 'local' to get it from local server or
                        a name of another source (e.g. CDN)
         :arg protocol: 'http' (default) or 'https'
         """
+        self.__dict__.update([(name.lower(), getattr(module, name))
+                              for name in dir(module)
+                              if name.isupper()
+                             ])
         self.provider = provider
         if provider == 'local':
             self.base_url = "%s/%s" % (root_url, self.name)
