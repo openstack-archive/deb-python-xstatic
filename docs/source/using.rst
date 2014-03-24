@@ -31,10 +31,11 @@ Example code to setup local file serving
         'jquery', 'bootstrap', 'font_awesome',
     ]
     pkg = __import__('xstatic.pkg', fromlist=mod_names)
+    serve_files = {}
     for mod_name in mod_names:
         mod = getattr(pkg, mod_name)
         xs = XStatic(mod, root_url='/static', provider='local', protocol='http')
-        serve_files.update([(xs.name, xs.base_dir)])
+        serve_files[xs.name] = xs.base_dir
 
     # now, serve_files has the mapping name -> base_dir for all the xstatic
     # packages you want to use. you can use it in your python code to set
