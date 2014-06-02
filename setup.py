@@ -7,9 +7,13 @@ XStatic - setup.py
 Works with: setuptools
 """
 
+import os.path
 # The README.txt file should be written in reST so that PyPI can use
 # it to generate your project's PyPI page. 
-long_description = open('README.txt').read()
+readme_path = os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                           'README.txt')
+with open(readme_path) as f:
+    long_description = f.read()
 
 from setuptools import setup, find_packages
 
