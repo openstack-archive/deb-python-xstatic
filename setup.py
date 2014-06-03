@@ -1,4 +1,4 @@
-# Copyright: 2011 by the XStatic authors, see AUTHORS.txt for details.
+# Copyright: 2011-2014 by the XStatic authors, see AUTHORS.txt for details.
 # License: MIT license, see LICENSE.txt for details.
 
 """
@@ -19,12 +19,12 @@ from setuptools import setup, find_packages
 
 setup(
     name='XStatic',
-    version='0.0.2',
+    version='1.0.0',
     description='XStatic base package with minimal support code',
     long_description=long_description,
     classifiers=[
         'License :: OSI Approved :: MIT License',
-        'Development Status :: 3 - Alpha',
+        'Development Status :: 5 - Production/Stable',
         'Intended Audience :: Developers',
         'Operating System :: OS Independent',
         'Programming Language :: Python',
