@@ -49,6 +49,7 @@ For some packages there is also a CDN available, you can use it by giving the
 appropriate provider (not 'local') and protocol (see the xstatic-* package metadata about which cdnnames and protocols are available for the package):
 
 ::
+
     xs = XStatic(mod, provider='cdnname', protocol='https')
     print xs.base_url
 

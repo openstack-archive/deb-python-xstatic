@@ -7,6 +7,7 @@ What is XStatic
    :maxdepth: 2
 
    intro
+   license
 
 
 Using XStatic
