@@ -1,0 +1,9 @@
+Document: xstatic-doc
+Title: XStatic Documentation
+Author: N/A
+Abstract: Sphinx documentation for XStatic
+Section: Programming/Python
+
+Format: HTML
+Index: /usr/share/doc/python-xstatic-doc/html/index.html
+Files: /usr/share/doc/python-xstatic-doc/html/*

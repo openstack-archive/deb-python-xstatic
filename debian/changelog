@@ -1,0 +1,5 @@
+python-xstatic (1.0.0-1) unstable; urgency=medium
+
+  * Initial release. (Closes: #752995)
+
+ -- Thomas Goirand <zigo@debian.org>  Sat, 28 Jun 2014 16:34:13 +0800
