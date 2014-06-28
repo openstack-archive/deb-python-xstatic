@@ -19,7 +19,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='XStatic',
-    version='1.0.0',
+    version='1.0.1',
     description='XStatic base package with minimal support code',
     long_description=long_description,
     classifiers=[
