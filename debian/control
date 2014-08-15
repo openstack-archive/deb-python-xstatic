@@ -13,9 +13,9 @@ Build-Depends: debhelper (>= 9),
                python3-setuptools,
  python-sphinx
 Standards-Version: 3.9.5
-Vcs-Browser: http://anonscm.debian.org/gitweb/?p=openstack/python-XStatic.git
-Vcs-Git: git://anonscm.debian.org/openstack/python-XStatic.git
-Homepage: http:/bitbucket.org/thomaswaldmann/xstatic
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=openstack/python-xstatic.git
+Vcs-Git: git://anonscm.debian.org/openstack/python-xstatic.git
+Homepage: https://github.com/stackforge/xstatic
 
 Package: python-xstatic
 Architecture: all
