@@ -1,3 +1,9 @@
+python-xstatic (1.0.0-4) unstable; urgency=medium
+
+  * Fixed upstream URLs (Closes: #757796).
+
+ -- Thomas Goirand <zigo@debian.org>  Wed, 10 Sep 2014 11:47:53 +0000
+
 python-xstatic (1.0.0-3) unstable; urgency=medium
 
   * Update VCS URLs, as well as the upstream ones.
