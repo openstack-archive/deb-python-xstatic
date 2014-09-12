@@ -22,26 +22,11 @@ Architecture: all
 Pre-Depends: dpkg (>= 1.15.6~)
 Depends: ${misc:Depends}, ${python:Depends}
 Description: XStatic base package with minimal support code - Python 2.x
- XStatic is a packaging standard to package external (often 3rd party) static
- files as a Python package, so they are easily usable on all operating systems,
- with any package management system or even without one.
- .
- Many Python projects need to use some specific data files, like javascript,
- css, java applets, images, etc. Sometimes these files belong to YOUR project
- (then you may want to package them separately, but you could also just put
- them into your main package). But in many other cases, those files are
- maintained by someone else (like jQuery javascript library or even much bigger
- js libraries or applications) and you definitely do not really want to merge
- them into your project. So, you want to have static file packages, but you
- don’t want to get lots of stuff you do not want. Thus, stuff required by
- XStatic file packages (especially the main, toplevel XStatic package) tries to
- obey to be a MINIMAL, no-fat thing. XStatic doesn't "sell" any web framework
- or other stuff you don't want. Maybe there will be optional XStatic extensions
- for all sorts of stuff, but they won't be required if you just want the files.
- .
- By having static files in packages, it is also easier to build virtual envs,
- support linux/bsd/... distribution package maintainers and even windows
- installs using the same mechanism.
+ XStatic is a Python web development tool for handling required static data
+ files from external projects, such as CSS, images, and JavaScript. It provides
+ a lightweight infrastructure to manage them via Python modules that your app
+ can depend on in a portable, virtualenv-friendly way instead of using embedded
+ copies.
  .
  This package contains the Python 2.x module.
 
@@ -50,26 +35,11 @@ Architecture: all
 Pre-Depends: dpkg (>= 1.15.6~)
 Depends: ${misc:Depends}, ${python3:Depends}
 Description: XStatic base package with minimal support code - Python 3.x
- XStatic is a packaging standard to package external (often 3rd party) static
- files as a Python package, so they are easily usable on all operating systems,
- with any package management system or even without one.
- .
- Many Python projects need to use some specific data files, like javascript,
- css, java applets, images, etc. Sometimes these files belong to YOUR project
- (then you may want to package them separately, but you could also just put
- them into your main package). But in many other cases, those files are
- maintained by someone else (like jQuery javascript library or even much bigger
- js libraries or applications) and you definitely do not really want to merge
- them into your project. So, you want to have static file packages, but you
- don’t want to get lots of stuff you do not want. Thus, stuff required by
- XStatic file packages (especially the main, toplevel XStatic package) tries to
- obey to be a MINIMAL, no-fat thing. XStatic doesn't "sell" any web framework
- or other stuff you don't want. Maybe there will be optional XStatic extensions
- for all sorts of stuff, but they won't be required if you just want the files.
- .
- By having static files in packages, it is also easier to build virtual envs,
- support linux/bsd/... distribution package maintainers and even windows
- installs using the same mechanism.
+ XStatic is a Python web development tool for handling required static data
+ files from external projects, such as CSS, images, and JavaScript. It provides
+ a lightweight infrastructure to manage them via Python modules that your app
+ can depend on in a portable, virtualenv-friendly way instead of using embedded
+ copies.
  .
  This package contains the Python 3.x module.
 
@@ -79,25 +49,10 @@ Architecture: all
 Pre-Depends: dpkg (>= 1.15.6~)
 Depends: ${misc:Depends}, ${sphinxdoc:Depends}
 Description: XStatic base package with minimal support code - doc
- XStatic is a packaging standard to package external (often 3rd party) static
- files as a Python package, so they are easily usable on all operating systems,
- with any package management system or even without one.
- .
- Many Python projects need to use some specific data files, like javascript,
- css, java applets, images, etc. Sometimes these files belong to YOUR project
- (then you may want to package them separately, but you could also just put
- them into your main package). But in many other cases, those files are
- maintained by someone else (like jQuery javascript library or even much bigger
- js libraries or applications) and you definitely do not really want to merge
- them into your project. So, you want to have static file packages, but you
- don’t want to get lots of stuff you do not want. Thus, stuff required by
- XStatic file packages (especially the main, toplevel XStatic package) tries to
- obey to be a MINIMAL, no-fat thing. XStatic doesn't "sell" any web framework
- or other stuff you don't want. Maybe there will be optional XStatic extensions
- for all sorts of stuff, but they won't be required if you just want the files.
- .
- By having static files in packages, it is also easier to build virtual envs,
- support linux/bsd/... distribution package maintainers and even windows
- installs using the same mechanism.
+ XStatic is a Python web development tool for handling required static data
+ files from external projects, such as CSS, images, and JavaScript. It provides
+ a lightweight infrastructure to manage them via Python modules that your app
+ can depend on in a portable, virtualenv-friendly way instead of using embedded
+ copies.
  .
  This package contains the documentation.
