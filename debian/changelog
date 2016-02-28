@@ -1,3 +1,9 @@
+python-xstatic (1.0.0-6) UNRELEASED; urgency=medium
+
+  * Fixed VCS URLs (https).
+
+ -- Ondřej Nový <novy@ondrej.org>  Sun, 28 Feb 2016 15:54:08 +0100
+
 python-xstatic (1.0.0-5) unstable; urgency=medium
 
   * Fixed long description according to Justin R Rye recommendations.
