@@ -3,7 +3,7 @@
 PYTHONS:=$(shell pyversions -vr)
 PYTHON3S:=$(shell py3versions -vr)
 
-UPSTREAM_GIT = https://bitbucket.org/thomaswaldmann/xstatic
+UPSTREAM_GIT = hg::https://bitbucket.org/thomaswaldmann/xstatic
 -include /usr/share/openstack-pkg-tools/pkgos.make
 
 %:
