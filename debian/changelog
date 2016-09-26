@@ -1,6 +1,8 @@
 python-xstatic (1.0.0-6) UNRELEASED; urgency=medium
 
   * Fixed VCS URLs (https).
+  * d/s/options: extend-diff-ignore of .gitreview
+  * d/control: Using OpenStack's Gerrit as VCS URLs.
 
  -- Ondřej Nový <novy@ondrej.org>  Sun, 28 Feb 2016 15:54:08 +0100
 
